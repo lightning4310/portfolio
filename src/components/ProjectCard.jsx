@@ -1,7 +1,8 @@
-function ProjectCard({ number, name, highlights, techStack }) {
+function ProjectCard({ number, name, highlights, techStack, image, onSelect }) {
     return (
         <div className="project-card">
-            <div>
+
+            <div className="project-card-body">
                 <p className="project-number">
                     {String(number).padStart(2, "0")}
                 </p>
@@ -15,9 +16,20 @@ function ProjectCard({ number, name, highlights, techStack }) {
                 </ul>
             </div>
 
-            <p className="project-tech">
-                {techStack}
-            </p>
+            <div className="project-card-footer">
+                <p className="project-tech">
+                    {techStack}
+                </p>
+                <button
+                    type="button"
+                    className="project-details-btn"
+                    onClick={onSelect}
+                    aria-label={`View details for ${name}`}
+                >
+                    <span>View Details</span>
+                    <span className="btn-arrow">→</span>
+                </button>
+            </div>
         </div>
     );
 }
