@@ -603,6 +603,10 @@ h2 {
   animation: modalFadeIn 0.2s ease;
 }
 
+.modal-section {
+  padding-bottom: 3px;
+}
+
 .modal-section h4 {
   font-size: 0.95rem;
   color: #ddd;

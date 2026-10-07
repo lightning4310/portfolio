@@ -59,7 +59,8 @@ function Projects() {
                 { caption: "System Architecture Flow", image: "/projects/cvms/Architecture.png", icon: "📐" }
             ],
             githubUrl: "https://github.com/lightning4310/CVMS",
-            liveUrl: ""
+            liveUrl: "",
+            videoUrl: "https://drive.google.com/drive/folders/1c6d7WVypz_YoTp_OOP-yiPNL64NdPDvE?usp=sharing"
         },
         {
             name: "Inventory Management System – MERN Stack",

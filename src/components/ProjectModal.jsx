@@ -206,6 +206,17 @@ function ProjectModal({ project, onClose }) {
                                 <p className="modal-desc">
                                     Screenshots and graphical demonstrations of {project.name}.
                                 </p>
+                                {project.videoUrl && (
+                                    <a
+                                        href={project.videoUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="secondary-button modal-btn"
+                                        style={{ display: "inline-block", marginTop: "12px" }}
+                                    >
+                                        ▶ Watch
+                                    </a>
+                                )}
                             </section>
 
                             <div className="modal-gallery-grid">
