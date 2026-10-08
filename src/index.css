@@ -534,7 +534,14 @@ h2 {
   padding: 0 16px;
   gap: 8px;
   flex-shrink: 0;
-  overflow: visible;
+  overflow-x: auto;
+  overflow-y: visible;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.project-modal-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .project-tab-btn {
@@ -879,6 +886,34 @@ h2 {
 
   .flow-arrow {
     transform: rotate(90deg);
+  }
+
+  .project-modal-tabs {
+    padding: 0 8px;
+    gap: 2px;
+  }
+
+  .project-tab-btn {
+    flex: 0 0 auto;
+    padding: 11px 12px;
+    font-size: 0.78rem;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .project-tab-btn .tab-label {
+    display: none;
+  }
+
+  .project-tab-btn {
+    flex: 1;
+    justify-content: center;
+    padding: 12px 8px;
+  }
+
+  .project-tab-btn .tab-icon {
+    font-size: 1.1rem;
   }
 }
 
